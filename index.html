@@ -47,6 +47,16 @@
       line-height: 1.6;
     }
 
+    .logo-link {
+      text-decoration: none;
+      /* Menghilangkan garis bawah */
+      color: inherit;
+      /* Menjaga warna teks agar tidak berubah jadi biru */
+      cursor: pointer;
+      /* Mengubah kursor menjadi bentuk tangan saat diarahkan */
+      display: inline-block;
+    }
+
     img {
       max-width: 100%;
       height: auto;
@@ -82,9 +92,14 @@
 
     .navbar-inner {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      gap: 1rem;
+      padding: 0 40px;
+      /* Mengatur jarak dari tepi kiri dan kanan layar */
+      max-width: 1200px;
+      /* Batas lebar maksimal kontainer */
+      margin: 0 auto;
+      /* Membuat posisi navbar berada tepat di tengah layar */
     }
 
     .logo-area {
@@ -531,15 +546,21 @@
   <!-- HEADER / NAVIGASI -->
   <header class="site-header">
     <div class="navbar-inner">
-      <div class="logo-area">
-        <div class="logo-badge">
-          <img src="img/brantas.png" alt="Logo SMKS Brantas Karangkates" class="logo-img">
+
+      <!-- BUNGKUS DENGAN TAG <a> DI SINI -->
+      <a href="#" class="logo-link">
+        <div class="logo-area">
+          <div class="logo-badge">
+            <img src="img/brantas.png" alt="Logo SMKS Brantas Karangkates" class="logo-img">
+          </div>
+          <div class="logo-text-group">
+            <span class="logo-title">SMKS BRANTAS</span>
+            <span class="logo-subtitle">RPL</span>
+          </div>
         </div>
-        <div class="logo-text-group">
-          <span class="logo-title">SMKS BRANTAS</span>
-          <span class="logo-subtitle">RPL</span>
-        </div>
-      </div>
+      </a>
+      <!-- BATAS AKHIR PEMBUNGKUS -->
+
       <nav class="nav-links">
         <a href="#beranda">Beranda</a>
         <a href="#portofolio-siswa">Portofolio Siswa</a>
@@ -598,12 +619,13 @@
           <img src="img/profil/3.AISYAH.jpeg" alt="Aisyah Nabila M." class="student-avatar">
           <h3>Aisyah Nabila M.</h3>
           <p class="student-bio">
-            Spesialis antarmuka web interaktif, desain UI/UX, dan implementasi CSS modern.
+            "Keindahan tidak hanya terletak pada apa yang terlihat, tetapi juga pada kemudahan dan kenyamanan yang
+            dirasakan oleh orang lain."
           </p>
           <div class="student-skills">
             <span>HTML/CSS</span><span>JavaScript</span><span>UI/UX</span>
           </div>
-          <a href="https://portofoliolea.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-portfolio">
+          <a href="https://aisyah-nabila.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-portfolio">
             Lihat Portofolio <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </article>
@@ -613,13 +635,13 @@
           <img src="img/profil/6. AMELIYA PUTRI CAHYANI_.jpg" alt="Ameliya Putri C." class="student-avatar">
           <h3>Ameliya Putri C.</h3>
           <p class="student-bio">
-            Berpengalaman dalam pengolahan basis data relasional, DQL, dan manajemen server.
+            "Keteraturan dan fondasi yang kokoh di balik layar adalah kunci utama terciptanya sistem yang stabil dan
+            bermanfaat."
           </p>
           <div class="student-skills">
             <span>Python</span><span>MySQL</span><span>PHP</span>
           </div>
-          <a href="https://portofolioameliya.vercel.app/" target="_blank" rel="noopener noreferrer"
-            class="btn-portfolio">
+          <a href="https://ameliya.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-portfolio">
             Lihat Portofolio <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </article>
@@ -629,7 +651,8 @@
           <img src="img/profil/9. AULIA PUTRI ANDITA.jpg" alt="Aulia Putri A." class="student-avatar">
           <h3>Aulia Putri A.</h3>
           <p class="student-bio">
-            Fokus pada pembuatan aplikasi desktop berbasis Python CustomTkinter &amp; OOP.
+            "Fokus pada tujuan dan teruslah berlatih; setiap logika yang rumit akan menjadi mudah jika dikerjakan
+            langkah demi langkah."
           </p>
           <div class="student-skills">
             <span>Python</span><span>Tkinter</span><span>OOP</span>
@@ -645,13 +668,13 @@
           <img src="img/profil/10. AYU WIDAYANTI.jpg" alt="Ayu Widayanti" class="student-avatar">
           <h3>Ayu Widayanti</h3>
           <p class="student-bio">
-            Pengembang game pemula menggunakan Pygame, logika koordinat, dan aset interaktif.
+            "Jangan pernah takut memulai dari awal. Setiap perjalanan besar seorang profesional selalu dimulai dari
+            langkah seorang pemula."
           </p>
           <div class="student-skills">
             <span>Pygame</span><span>Python</span><span>Logic</span>
           </div>
-          <a href="https://portofolioayu-kappa.vercel.app/" target="_blank" rel="noopener noreferrer"
-            class="btn-portfolio">
+          <a href="https://ayu-widayanti.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-portfolio">
             Lihat Portofolio <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </article>
@@ -661,7 +684,8 @@
           <img src="img/profil/15. ELISA FEBRIANI (1).jpg" alt="Elisa F." class="student-avatar">
           <h3>Elisa F.</h3>
           <p class="student-bio">
-            Mahir mengelola analisis data mentah menggunakan Microsoft Excel dan visualisasi dasar.
+            "Data mentah yang jujur dan diolah dengan teliti akan memberikan petunjuk serta arah yang benar untuk masa
+            depan."
           </p>
           <div class="student-skills">
             <span>Excel</span><span>Data Analysis</span><span>Reporting</span>
@@ -676,12 +700,12 @@
           <img src="img/profil/30. NINDY ANDA RISKA.jpg" alt="Nindy Anda R." class="student-avatar">
           <h3>Nindy Anda R.</h3>
           <p class="student-bio">
-            Berbakat dalam perancangan poster digital, estetika visual, dan animasi web CSS.
+            "Kreativitas adalah cara untuk menyampaikan kebaikan dan keindahan pesan tanpa perlu bersuara keras."
           </p>
           <div class="student-skills">
             <span>Canva</span><span>Figma</span><span>CSS Animation</span>
           </div>
-          <a href="https://portofolionindy.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-portfolio">
+          <a href="https://nindy-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-portfolio">
             Lihat Portofolio <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </article>
